@@ -1,28 +1,43 @@
-*{
+* {
     margin: 0;
 }
-html{
+
+html {
     height: 100%
 }
+
 body {
     background-color: #fdc435;
     height: 100%;
-    color: #fff;  
+    color: #fff;
 }
+
 #logo {
     font-family: "Cherry Bomb One", cursive;
-    color:red;
+    color: red;
     text-shadow: 1px 4px 4px #3f3f3f;
 }
 
-#description-text{
-    max-width: 500px; 
+#description-text {
+    max-width: 500px;
     text-align: center;
-    font-family:Arial, Helvetica, sans-serif
+    font-family: Arial, Helvetica, sans-serif
 }
 
-#start-btn{
-color: white; 
-background-color: orange;
-border-style: none;
+#start-btn {
+    color: white;
+    background-color: orange;
+    border-style: none;
+}
+
+#timer-text {
+    color: white;
+}
+
+#quote-display {
+    color: black;
+}
+
+.break {
+    color: black;
 }

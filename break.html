@@ -14,15 +14,22 @@
 </head>
 
 <body>
-    <header>
-        <h1 id="logo" class="title is-1 is-flex is-justify-content-center">PomoFocus</h1>
+    <header class="is-flex is-flex-direction-column is-align-items-center">
+        <h1 id="logo" class="title is-1 ">PomoFocus</h1>
+        <h3 class="break is-size-2"> Break Time</h3>
+        <p class="break is-size-4">Take five minutes for a breather!</p>
     </header>
-    
+
     <div id="quote-display" class="is-flex is is-flex-direction-column is-align-items-center mt-1">
-        <h1 class ="title is-size-1">5:00</h1>
-        <h2 id = "break-quote" class ="title is-size-3">"Keep your nose out the sky, keep your heart to god, and keep your face to the rising sun" </h2>
-        <h3 class ="is-size-4">- Kanye West</h3>
+        <h1 id="timer-text" class="title is-size-1">5:00</h1>
+        <h2 id="break-quote" class="title is-size-3 pt-5">"Keep your nose out the sky, keep your heart to god, and keep
+            your face to the rising sun" </h2>
+        <h3 class="is-size-4">- Kanye West</h3>
     </div>
-    <script src="./JavaScript/kanyeAPI.js"></script>
-    
-    </body>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.10.4/dayjs.min.js"></script>
+    <script src="./JavaScript/script.js"></script>
+    <script src="./JavaScript/kanye.js"></script>
+
+</body>

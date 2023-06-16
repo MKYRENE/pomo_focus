@@ -7,11 +7,11 @@ var remainingTime = duration;
 var isPaused = false;
 var displayName = $('#display');
 var displayTask = $('#task');
-var textBox = $('#name') ;
-var taskBox =  $('#taskBox');
-//var nameForm = document.getElementById('userForm');
+var textBox = $('#name');
+var taskBox = $('#taskBox');
 
 
+//timer
 $(function () {
     function startTimer() {
         var startTime = dayjs();
@@ -31,7 +31,8 @@ $(function () {
         }, 1000);
     }
 
-    function takeAbreak(){
+    //takes user to break screen after timer
+    function takeAbreak() {
         window.location.href = './break.html';
     }
 
@@ -70,7 +71,8 @@ $(function () {
 
 });
 
-$(document).ready(function() {
+//this stores name
+$(document).ready(function () {
     var names = [];
     var storedNames = localStorage.getItem("userName");
 
@@ -79,7 +81,7 @@ $(document).ready(function() {
         displayName.text(names.join("\n"));
     }
 
-    textBox.keydown(function(eventObj) {
+    textBox.keydown(function (eventObj) {
         if (eventObj.keyCode === 13) {
             var userInput = textBox.val();
 
@@ -92,7 +94,8 @@ $(document).ready(function() {
     });
 });
 
-$(document).ready(function() {
+//this stores task
+$(document).ready(function () {
     var tasks = [];
     var storedTasks = localStorage.getItem("userTask");
 
@@ -101,7 +104,7 @@ $(document).ready(function() {
         displayTask.text(tasks.join("\n"));
     }
 
-    taskBox.keydown(function(eventObj) {
+    taskBox.keydown(function (eventObj) {
         if (eventObj.keyCode === 13) {
             var userInputTask = taskBox.val();
 
@@ -114,3 +117,52 @@ $(document).ready(function() {
     });
 });
 
+
+
+// var breakTimer = $('#timer-text');
+// var timeStart = 300;
+// // var button = $('#start-break');
+// // var pauseButton = $('#pause-break');
+// var timerBreak;
+// var remainingBreak = timeStart;
+// // var isPaused = false;
+
+
+// $(function () {
+//     function startTimer() {
+//         var startTime = dayjs();
+//         var endTime = startTime.add(remainingBreak, 'second');
+
+//         timerBreak = setInterval(function () {
+//             var currentTime = dayjs();
+//             remainingBreak = endTime.diff(currentTime, 'second');
+
+//             if (remainingBreak <= 0) {
+//                 clearInterval(timerBreak);
+//                 takeAbreak();
+
+//             }
+
+//             updateDisplayTime();
+//         }, 1000);
+//     }
+
+
+//     //takes user to break screen after timer
+//     function takeAbreak() {
+//         window.location.href = './focus.html';
+//     }
+
+
+//     function updateDisplayTime() {
+//         var minutes = Math.floor(remainingTime / 60);
+//         var seconds = remainingTime % 60;
+
+//         var formattedTime = dayjs().minute(minutes).second(seconds).format('mm:ss');
+//         breakTimer.text(formattedTime);
+//     }
+
+//     startTimer();
+
+
+// });
