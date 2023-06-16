@@ -1,11 +1,44 @@
-*{
-    margin: 0;
-}
-body {
-    background-color: #fdc435;
+html, body {
     height: 100%;
 }
 
+body {
+    background-color: #fdc435;
+}
+
+.title {
+    font-family: "Cherry Bomb One", cursive;
+    color:red;
+}
+
 .call-to-action {
-    
+    height: 100%;
+    background-image: url(https://github.com/MKYRENE/pomo_focus/blob/main/Assets/tomato-vector.png?raw=true);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    justify-content: center !important;
+    color: #fff;
+    text-shadow: 1px 4px 4px #000;
+}
+
+.button {
+    background-color: #fff;
+    color: #000;
+    margin: 20px 0;
+    border-radius: 15px;
+    padding: 20px 50px;
+    font-size: 50px;
+}
+
+#description-text{
+    max-width: 500px;
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif
+}
+
+#start-btn{
+color: white;
+background-color: orange;
+border-style: none;
 }
