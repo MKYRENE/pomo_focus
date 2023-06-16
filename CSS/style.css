@@ -1,7 +1,28 @@
 *{
     margin: 0;
 }
+html{
+    height: 100%
+}
 body {
     background-color: #fdc435;
     height: 100%;
+    color: #fff;  
+}
+#logo {
+    font-family: "Cherry Bomb One", cursive;
+    color:red;
+    text-shadow: 1px 4px 4px #3f3f3f;
+}
+
+#description-text{
+    max-width: 500px; 
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif
+}
+
+#start-btn{
+color: white; 
+background-color: orange;
+border-style: none;
 }

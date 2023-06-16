@@ -7,39 +7,39 @@
 
     <title>PomoFocus</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-    <style>
-
-    </style>
-    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
 </head>
 
 <body>
+    <header>
+        <h1 id="logo" class="title is-1 is-flex is-justify-content-center">PomoFocus</h1>
+    </header>
+    
     <div id="start-screen" class="is-flex is-flex-direction-column is-justify-content-center is-align-items-center">
-        <h1 id="title">PomoFocus</h1>
+
         <!-- Explain to the user how to use the app -->
-        <p>You will have 25 minutes to work on your task</p>
+        <p class = "is-size-5">You will have 25 minutes to work on your task</p>
         <h2>What do you want to work on?</h2>
         <!-- Input Name section  -->
         <div class="field is-grouped">
             <div class="control">
-                <input class="input is-rounded is-small" type="text" placeholder="Name">
+                <div id="display">name</div>
+                <input id="name" class="input is-rounded is-small" type="text" placeholder="Name"> 
             </div>
             <div class="control">
-                <input class="input is-rounded is-small" type="text" placeholder="What do you want to work on">
+                <div id="task">task</div>
+                <input id="taskBox" class="input is-rounded is-small" type="text" placeholder="What do you want to work on">
             </div>
         </div>
-
-
-
-        <!-- First button to start timer -->
-
-        <!-- image -->
-        <img id="tomato-img" class="is-rounded" src="assets/tomato-vector.png"></img>
     </div>
-    <section>
-        <h2 id="timer">25:00</h2>
-        <button id="start-btn">Start Timer</button>
-        <button id="pause-btn">Pause Timer</button>
+
+    <section class="is-flex is-flex-direction-column is-align-items-center pt-3">
+        <h2 id="timer" class="title is-size-2">25:00</h2>
+        <button id="start-btn" class="button">Start Timer</button>
+        <button id="pause-btn" class="button">Pause</button>
     </section>
 
 
@@ -50,7 +50,7 @@
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"
         integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/dayjs@1.10.4/dayjs.min.js"></script>
-    <script src="./CSS/style.css"></script>
+    <script src="./JavaScript/script.js"></script>
 </body>
 
 </html>

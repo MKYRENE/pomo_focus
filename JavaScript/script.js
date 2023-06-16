@@ -5,6 +5,12 @@ var pauseButton = $('#pause-btn');
 var timerInterval;
 var remainingTime = duration;
 var isPaused = false;
+var displayName = $('#display');
+var displayTask = $('#task');
+var textBox = $('#name') ;
+var taskBox =  $('#taskBox');
+//var nameForm = document.getElementById('userForm');
+
 
 $(function () {
     function startTimer() {
@@ -17,11 +23,16 @@ $(function () {
 
             if (remainingTime <= 0) {
                 clearInterval(timerInterval);
-                
+                takeAbreak();
+
             }
-        
+
             updateDisplayTime();
         }, 1000);
+    }
+
+    function takeAbreak(){
+        window.location.href = './break.html';
     }
 
     function pauseTimer() {
@@ -53,8 +64,53 @@ $(function () {
             pauseTimer();
         }
 
-        
+
     });
 
 
 });
+
+$(document).ready(function() {
+    var names = [];
+    var storedNames = localStorage.getItem("userName");
+
+    if (storedNames) {
+        names = JSON.parse(storedNames);
+        displayName.text(names.join("\n"));
+    }
+
+    textBox.keydown(function(eventObj) {
+        if (eventObj.keyCode === 13) {
+            var userInput = textBox.val();
+
+            names.push(userInput);
+            localStorage.setItem("userName", JSON.stringify(names));
+
+            displayName.html(names.map(name => name + "<br>").join(""));
+            textBox.val("");
+        }
+    });
+});
+
+$(document).ready(function() {
+    var tasks = [];
+    var storedTasks = localStorage.getItem("userTask");
+
+    if (storedTasks) {
+        tasks = JSON.parse(storedTasks);
+        displayTask.text(tasks.join("\n"));
+    }
+
+    taskBox.keydown(function(eventObj) {
+        if (eventObj.keyCode === 13) {
+            var userInputTask = taskBox.val();
+
+            tasks.push(userInputTask);
+            localStorage.setItem("userTask", JSON.stringify(tasks));
+
+            displayTask.html(tasks.map(name => name + "<br>").join(""));
+            taskBox.val("");
+        }
+    });
+});
+
