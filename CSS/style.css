@@ -31,15 +31,20 @@ body {
 }
 
 #timer-text {
-    color: white;
+    color: black;
 }
 
 #quote-display {
-    color: black;
+    color: white;
+}
+
+#break-quote {
+    color: white;
+    max-width: 500px;
 }
 
 .break {
-    color: black;
+    color: white;
 }
 
 .container {
