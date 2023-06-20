@@ -41,3 +41,21 @@ body {
 .break {
     color: black;
 }
+
+.container {
+    display: flex;
+    justify-content: flex-end;
+       
+}
+
+.card {
+    flex-direction: column;
+    background-color: red;
+    border-radius: 5%; 
+    font-weight: bold;
+    /* max-width: 100px; */
+}
+
+h3 {
+    font-weight: bold;
+}
