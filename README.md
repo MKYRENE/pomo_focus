@@ -16,7 +16,7 @@ PomoFocus is a productivity app that helps you stay focused, manage tasks effect
 
 ### Screenshots [App screenshot main screen, and timer screen will be shown below]
 
-### Site URL: [Once deploy]
+### Site URL: [https://mkyrene.github.io/pomo_focus/]
 
 ## Usage
 
@@ -26,9 +26,9 @@ PomoFocus is a productivity app that helps you stay focused, manage tasks effect
 4. Take a short break of 5 minutes when the timer completes.
 5. Repeat the process for improved focus and productivity.
 
-## Contacts [OPTIONAL:each team members @ that contribute to the project]
+### Project Contributors
 
-
+Erin McGrane, Michael Rodriguez, Roman Kovbasniuk, Anthony Di Popolo, Ryan Wysocki
 
 ## License
 
