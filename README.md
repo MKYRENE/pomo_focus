@@ -15,7 +15,7 @@ PomoFocus is a productivity app that helps you stay focused, manage tasks effect
 3. Open the app in your preferred web browser: `index.html`
 
 ### Screenshots
-![Screenshot 1](/Assets/Page_screenshot.png)
+![Screenshot 1](/Assets/Page_ScreenShot.png)
 
 ### Site URL: [https://mkyrene.github.io/pomo_focus/]
 
