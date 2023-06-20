@@ -14,7 +14,8 @@ PomoFocus is a productivity app that helps you stay focused, manage tasks effect
 2. Navigate to the project directory: `cd pomofocus`
 3. Open the app in your preferred web browser: `index.html`
 
-### Screenshots [App screenshot main screen, and timer screen will be shown below]
+### Screenshots
+![Screenshot 1](/Assets/Page_screenshot.png)
 
 ### Site URL: [https://mkyrene.github.io/pomo_focus/]
 
